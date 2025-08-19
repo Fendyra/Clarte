@@ -15,7 +15,7 @@
 <body class="bg-white">
 
   <!-- Header Section -->
-  <header class="bg-white shadow-md">
+  <header class="bg-white">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
 
       <!-- Logo -->
@@ -33,12 +33,14 @@
         <a href="profile.php" class="text-gray-700 hover:underline">Profile</a>
         <span class="text-gray-300">/</span>
         <a href="services.php" class="text-gray-700 hover:underline">Services</a>
+        <span class="text-gray-300">/</span>
+        <a href="contact.php" class="text-gray-700 hover:underline">Let's Talk</a>
       </nav>
 
       <!-- Let's Talk! Button -->
       <a href="#"
         class="border border-gray-700 rounded-full text-black px-4 py-2 text-base relative overflow-hidden group transition-colors duration-300 hover:bg-black hover:text-white">
-        <span class="relative z-10">Let's Talk!</span>
+        <span class="relative z-10">Login</span>
       </a>
 
     </div>
