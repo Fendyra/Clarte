@@ -23,6 +23,7 @@
         <div class="text-2xl font-bold text-gray-700">
           CLARTÉ
         </div>
+          <span class="text-gray-500 ml-6">Brand & Design Studio</span>
       </div>
 
       <!-- Navigation Links -->
@@ -42,6 +43,5 @@
 
     </div>
   </header>
-
 </body>
 </html>
