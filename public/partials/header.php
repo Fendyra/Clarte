@@ -21,7 +21,9 @@
       <!-- Logo -->
       <div class="flex items-center">
         <div class="text-2xl font-bold text-gray-700">
+          <a href="index.php">
           CLARTÉ
+          </a>
         </div>
           <span class="text-gray-500 ml-6">Brand & Design Studio</span>
       </div>
@@ -37,7 +39,7 @@
         <a href="contact.php" class="text-gray-700 hover:underline">Let's Talk</a>
       </nav>
 
-      <!-- Let's Talk! Button -->
+      <!-- Login Button -->
       <a href="#"
         class="border border-gray-700 rounded-full text-black px-4 py-2 text-base relative overflow-hidden group transition-colors duration-300 hover:bg-black hover:text-white">
         <span class="relative z-10">Login</span>

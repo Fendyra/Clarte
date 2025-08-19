@@ -40,43 +40,29 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
 
             <div class="flex flex-col justify-start lg:mt-16">
-                <h2 class="text-5xl md:text-7xl font-bold leading-tight text-black mb-4">
+                <h2 class="text-xl md:text-2xl font-bold leading-tight text-black mb-4">
                     About Us
                 </h2>
-                <p class="text-lg md:text-xl text-gray-400">
-                    We exist to empower brands with a digital presence that resonates with soul and purpose.
+                <p class="text-7xl md:text-8xl text-gray-400">
+                  We build brands that speak volumes.
                 </p>
             </div>
 
-            <div class="flex flex-col space-y-12">
-                <div class="p-8 rounded-3xl bg-gray-200 text-black shadow-xl border border-gray-700 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] group">
-                    <div class="flex items-center">
-                        <span class="text-8xl font-thin text-black group-hover:opacity-40 transition-opacity duration-300">01</span>
-                        <div class="ml-8">
-                            <h3 class="text-4xl font-bold mb-2">Vision</h3>
-                            <p class="leading-relaxed text-justify">
-                                To be a leading creative agency known for crafting digital masterpieces that not only look stunning but also tell a compelling brand story. We envision a future where every brand, big or small, has a voice and a digital space that truly reflects its unique identity and values.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex flex-col space-y-6 lg:mt-[100px]">
+                <p class="text-black leading-relaxed text-justify">
+                    Clarte Creative Agency is a full-service creative and digital studio dedicated to building brands that connect and captivate. We believe that true creativity lies in the perfect fusion of art and strategy, and our mission is to transform your vision into an elegant, impactful digital presence that tells a compelling story and drives real results. Our team of passionate designers, developers, and strategists are committed to delivering excellence, from meticulous brand identities and cutting-edge web development to data-driven digital marketing, ensuring your brand shines with purpose and elegance.
+                </p>
+              <a href="about.php"
+                class="self-start inline-block border border-gray-700 rounded-full text-black px-6 py-2 text-base transition-colors duration-300 hover:bg-black hover:text-white">
+                <span class="relative z-10">See More</span>
+              </a>
 
-                <div class="p-8 bg-black shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] group">
-                    <div class="flex items-center">
-                        <span class="text-8xl font-thin text-white group-hover:opacity-40 transition-opacity duration-300">02</span>
-                        <div class="ml-8">
-                            <h3 class="text-4xl font-bold mb-2 text-white">Mission</h3>
-                            <p class="text-white leading-relaxed text-justify">
-                                Our mission is to combine cutting-edge technology with thoughtful design to deliver impactful solutions. We commit to understanding our clients' goals and challenges, providing a collaborative journey that results in beautiful, functional, and user-centric digital experiences.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
-    </div>
 </section>
 
-
+<footer class="bg-black text-white font-sans py-10 md:py-16">
+    <?php include "partials/footer.php"; ?>
  
 </html>

@@ -3,11 +3,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
 
             <div class="flex flex-col justify-start lg:mt-16">
-                <h2 class="text-5xl md:text-7xl font-bold leading-tight text-white mb-4">
+                <h2 class="text-xl md:text-2xl font-bold leading-tight text-white mb-4">
                     Vision & Mission
                 </h2>
-                <p class="text-lg md:text-xl text-gray-400">
-                    We exist to empower brands with a digital presence that resonates with soul and purpose.
+                <p class="text-7xl md:text-8xl text-gray-400">
+                    Where Purpose Meets Presence.                
                 </p>
             </div>
 

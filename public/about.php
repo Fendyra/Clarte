@@ -25,4 +25,7 @@
         </div>
     </div>
 </section>
+
+<footer class="bg-black text-white font-sans py-10 md:py-16">
+    <?php include "partials/footer.php"; ?>
 </body>
