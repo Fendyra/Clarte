@@ -8,12 +8,12 @@
     <div class="flex items-center">      
       <h1 class="text-left font-bold uppercase tracking-tight leading-none text-2xl 
                  md:text-[clamp(2.5rem,10vw,8rem)] p-4 pr-0">
-        Elegant
+        Elegance
       </h1>
       
       <!-- Brand CLARTÉ dengan tooltip muncul saat hover -->
       <div class="relative group ml-4 md:ml-8">
-        <div class="text-xl md:text-3xl font-bold tracking-widest text-gray-800 cursor-default">
+        <div class="text-xl md:text-3xl font-bold tracking-widest text-blue-700 cursor-default">
           CLARTÉ
         </div>
         <!-- Tooltip → muncul saat hover -->
@@ -30,11 +30,11 @@
     <!-- Judul besar hero -->
     <h1 class="text-center font-bold uppercase tracking-tight leading-none text-2xl 
                md:text-[clamp(2.5rem,10vw,8rem)] p-4">
-      Design For
+      In Every
     </h1>
     <h1 class="text-left font-bold uppercase tracking-tight leading-none text-2xl 
                md:text-[clamp(2.5rem,10vw,8rem)] p-4">
-      Creative Brands.
+      Identity Brand.
     </h1>
 
     <!-- Aksen garis horizontal di kanan bawah -->
@@ -124,6 +124,11 @@
             </div>
         </div>
     </div>
+</section>
+
+<!-- Contact Us -->
+ <section class="bg-white py-10 md:py-16">
+  <?php include "contact.php"; ?>
 </section>
 
 <!-- Footer -->

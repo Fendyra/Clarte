@@ -43,6 +43,7 @@
         <a href="profile.php" class="text-gray-700 hover:underline">Profile</a>
         <span class="text-gray-300">/</span>
         <a href="services.php" class="text-gray-700 hover:underline">Services</a>
+
       </nav>
 
       <!-- Login Button -->
