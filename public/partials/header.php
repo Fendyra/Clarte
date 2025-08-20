@@ -3,7 +3,7 @@
 <head>
   <!-- Pengaturan dasar dokumen -->
   <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clarte Creative Agency</title>
 
   <!-- Load Tailwind CSS dari CDN -->
@@ -43,8 +43,6 @@
         <a href="profile.php" class="text-gray-700 hover:underline">Profile</a>
         <span class="text-gray-300">/</span>
         <a href="services.php" class="text-gray-700 hover:underline">Services</a>
-        <span class="text-gray-300">/</span>
-        <a href="contact.php" class="text-gray-700 hover:underline">Let's Talk</a>
       </nav>
 
       <!-- Login Button -->

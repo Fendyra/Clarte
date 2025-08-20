@@ -38,7 +38,7 @@
     </h1>
 
     <!-- Aksen garis horizontal di kanan bawah -->
-    <div class="absolute bottom-16 right-16 w-32 h-0.5 bg-yellow-400"></div>
+    <div class="absolute bottom-16 right-16 w-32 h-0.5 bg-blue-700"></div>
   </div>
 </body>
 

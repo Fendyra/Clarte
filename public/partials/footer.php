@@ -27,7 +27,7 @@
                 
                 <!-- Menu Navigasi -->
                 <nav>
-                    <h3 class="font-bold text-lg mb-4 text-yellow-400 uppercase">Explore</h3>
+                    <h3 class="font-bold text-lg mb-4 text-blue-700 uppercase">Explore</h3>
                     <ul>
                         <li class="mb-2">
                             <a href="services.php" class="text-gray-300 hover:text-white transition-colors duration-300">
@@ -49,7 +49,7 @@
 
                 <!-- Menu Kontak -->
                 <nav>
-                    <h3 class="font-bold text-lg mb-4 text-yellow-400 uppercase">Contact Us</h3>
+                    <h3 class="font-bold text-lg mb-4 text-blue-700 uppercase">Contact Us</h3>
                     <ul>
                         <li class="mb-2">
                             <!-- Klik langsung call -->
