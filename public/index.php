@@ -177,6 +177,7 @@
   <?php include "contact.php"; ?>
 </section>
 
+
 <!-- Footer -->
 <?php include "partials/footer.php"; ?>
 <!-- Panggil file footer.php -->
