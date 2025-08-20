@@ -85,6 +85,51 @@
     </div>
 </section>
 
+<!-- Service Section -->
+<section class="bg-black">
+  <div class="container mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
+            <!-- Kolom kiri: judul + tagline -->
+            <div class="flex flex-col justify-start lg:mt-16">
+                <h2 class="text-xl md:text-2xl font-bold leading-tight text-white mb-4">
+                    Our Services
+                </h2>
+                <p class="text-7xl md:text-8xl text-gray-400">
+                  Creativity That Moves Brands Forward.
+                </p>
+            </div>
+
+            <!-- Kolom kanan: deskripsi & button -->
+            <div class="flex flex-col space-y-6 lg:mt-[100px]">
+              <h3 class="text-white text-4xl md:text-5xl font-bold  text-start ml-4">
+                Brand & Identity
+              </h3>
+              <span class="border-t border-white"></span>
+              <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
+                Design & Creative
+              </h3>
+              <span class="border-t border-white"></span>
+              <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
+                Digital Marketing
+              </h3>
+              <span class="border-t border-white"></span>
+              <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
+                Content Production
+              </h3>
+              <span class="border-t border-white"></span>
+
+              <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
+                Web & Technology
+              </h3>
+              <span class="border-t border-white"></span>
+              <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
+                Event & Activation
+              </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer class="bg-black text-white font-sans py-10 md:py-16">
     <?php include "partials/footer.php"; ?>

@@ -48,7 +48,7 @@
       </nav>
 
       <!-- Login Button -->
-      <a href="#"
+      <a href="login.php"
         class="border border-gray-700 rounded-full text-black px-4 py-2 text-base relative overflow-hidden group transition-colors duration-300 hover:bg-black hover:text-white">
         <span class="relative z-10">Login</span>
       </a>

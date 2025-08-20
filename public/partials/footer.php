@@ -1,4 +1,4 @@
-<footer class="bg-black text-white font-sans py-10 md:py-16">
+<footer class="bg-black text-white font-sans py-4 md:py-6">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-start gap-12">
             <!-- Kolom Kiri: Brand & Sosmed -->
