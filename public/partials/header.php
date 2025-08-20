@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pengaturan dasar dokumen -->
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Clarte Creative Agency</title>
+
+  <!-- Load Tailwind CSS dari CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Import font -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif; 
     }
   </style>
 </head>
@@ -17,21 +22,24 @@
   <!-- Header Section -->
   <header class="bg-white">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Container utama header: flex untuk sejajar logo, navigasi, dan button -->
 
       <!-- Logo -->
       <div class="flex items-center">
         <div class="text-2xl font-bold text-gray-700">
           <a href="index.php">
-          CLARTÉ
+            CLARTÉ
           </a>
         </div>
-          <span class="text-gray-500 ml-6">Brand & Design Studio</span>
+        <!-- Tagline kecil -->
+        <span class="text-gray-500 ml-6">Brand & Design Studio</span>
       </div>
 
       <!-- Navigation Links -->
       <nav class="space-x-1">
+        <!-- Link navigasi utama -->
         <a href="about.php" class="text-gray-700 hover:underline">About</a>
-        <span class="text-gray-300">/</span>
+        <span class="text-gray-300">/</span> 
         <a href="profile.php" class="text-gray-700 hover:underline">Profile</a>
         <span class="text-gray-300">/</span>
         <a href="services.php" class="text-gray-700 hover:underline">Services</a>
