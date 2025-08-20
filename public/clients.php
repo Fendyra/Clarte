@@ -1,9 +1,9 @@
 <section class="bg-black text-white font-sans py-20 px-6">
   <div class="container mx-auto">
-    <h2 class="text-4xl md:text-5xl font-bold text-center uppercase mb-16 tracking-wide text-gray-400">
-      Our Esteemed Clients
-    </h2>
-
+           <div class="text-left mb-12">
+              <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">Our Estemeed <br> Clients</h2>
+              <p class="text-lg md:text-xl text-white">
+                Collaboration with brands that value creativity, clarity, and innovation.             </div>
     <div class="border-t border-b border-gray-700 py-10">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">

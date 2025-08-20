@@ -50,7 +50,7 @@
 
 <!-- About Section -->
 <section class="bg-white">
-  <div class="container mx-auto px-6 py-20">
+  <div class="container mx-auto px-4 py-8 mb-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
             <!-- Kolom kiri: judul + tagline -->
             <div class="flex flex-col justify-start lg:mt-16">
@@ -107,7 +107,7 @@
               <span class="border-t border-white"></span>
 
               <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
-                Web & Technology
+                Motion Graphics
               </h3>
               <span class="border-t border-white"></span>
               <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
@@ -137,8 +137,8 @@
       </div>
       
       <div class="container mx-auto px-4 z-10 relative">
-          <div class="text-center mb-12">
-              <h2 class="text-3xl md:text-4xl font-bold mb-4 text-black">Our Company in Numbers</h2>
+          <div class="text-left mb-12">
+              <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-black">Our Company <br> in Numbers</h2>
               <p class="text-lg md:text-xl text-black">
                 We are a dynamic and results-driven company, committed to excellence and delivering outstanding value to our clients. Our journey is defined by milestones that reflect our dedication, expertise, and unwavering focus on success.              </p>
           </div>
@@ -173,15 +173,12 @@
 </section>
 
 <!-- Contact Us -->
- <section class="bg-white py-10 md:py-16">
+ <section class="bg-white">
   <?php include "contact.php"; ?>
 </section>
 
-
 <!-- Footer -->
-<footer class="bg-black text-white font-sans py-10 md:py-16">
-    <?php include "partials/footer.php"; ?>
-    <!-- Include file footer.php  -->
-</footer>
+<?php include "partials/footer.php"; ?>
+<!-- Panggil file footer.php -->
 
 </html>

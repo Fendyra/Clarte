@@ -1,5 +1,5 @@
 <body class="bg-white font-sans">
-    <div class="container mx auto px-6 py-20">
+    <div class="container mx auto px-4 py-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
             <!-- Kolom Kiri: Judul dan Tagline -->
             <div class="flex flex-col items-start lg:mt-16">

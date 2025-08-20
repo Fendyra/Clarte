@@ -45,9 +45,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-black text-white font-sans py-10 md:py-16">
-    <?php include "partials/footer.php"; ?>
-    <!-- Panggil file footer.php -->
-</footer>
+<?php include "partials/footer.php"; ?>
+<!-- Panggil file footer.php -->
 
 </body>

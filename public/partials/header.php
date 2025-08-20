@@ -40,9 +40,9 @@
         <!-- Link navigasi utama -->
         <a href="about.php" class="text-gray-700 hover:underline">About</a>
         <span class="text-gray-300">/</span> 
-        <a href="profile.php" class="text-gray-700 hover:underline">Profile</a>
-        <span class="text-gray-300">/</span>
         <a href="services.php" class="text-gray-700 hover:underline">Services</a>
+        <span class="text-gray-300">/</span>
+        <a href="gallery.php" class="text-gray-700 hover:underline">gallery</a>
 
       </nav>
 
