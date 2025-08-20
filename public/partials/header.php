@@ -1,14 +1,24 @@
+<?php
+// Pastikan session sudah dimulai di awal file
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Pengaturan dasar dokumen -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clarte Creative Agency</title>
 
+    <!-- Load Tailwind CSS dari CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Import Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+    <!-- Import font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
         body {
@@ -18,6 +28,8 @@
 </head>
 <body class="bg-white">
 
+    <!-- Header Section -->
+    <!-- Alpine.js component for sidebar functionality -->
     <header class="bg-white" x-data="{ open: false, dropdown: false }" @click.away="open = false">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <div class="flex items-center">
@@ -38,11 +50,23 @@
             </nav>
 
             <div class="flex items-center space-x-2">
-                <a href="login.php"
-                    class="border border-gray-700 rounded-full text-black px-3 py-1 md:px-4 md:py-2 text-xs md:text-base relative overflow-hidden group transition-colors duration-300 hover:bg-black hover:text-white">
-                    <span class="relative z-10">Login</span>
-                </a>
-                
+                <!-- Logika PHP untuk menampilkan nama atau tombol login/logout -->
+                <?php if (isset($_SESSION['user_name'])): ?>
+                    <!-- Tampilan jika user sudah login -->
+                    <span class="text-gray-700 text-sm md:text-base">Hola, <?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
+                    <a href="logout.php" class="border border-gray-700 rounded-full text-black px-3 py-1 md:px-4 md:py-2 text-xs md:text-base 
+                                                   relative overflow-hidden group transition-colors duration-300 hover:bg-black hover:text-white">
+                        <span class="relative z-10">Logout</span>
+                    </a>
+                <?php else: ?>
+                    <!-- Tampilan jika user belum login -->
+                    <a href="login.php" class="border border-gray-700 rounded-full text-black px-3 py-1 md:px-4 md:py-2 text-xs md:text-base 
+                                                   relative overflow-hidden group transition-colors duration-300 hover:bg-black hover:text-white">
+                        <span class="relative z-10">Login</span>
+                    </a>
+                <?php endif; ?>
+
+                <!-- Hamburger Button to toggle sidebar -->
                 <button @click="open = !open" class="text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -52,11 +76,12 @@
             </div>
         </div>
 
+        <!-- Sidebar (Off-canvas) -->
         <div class="fixed top-0 right-0 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-50"
             :class="{ 'translate-x-0': open, 'translate-x-full': !open }" x-cloak>
 
-            <div class="flex justify-between items-center p-4">
-              <a href="index.php" class="text-xl font-bold text-gray-700">CLARTÉ</a>
+            <div class="flex justify-between items-center p-4 border-b border-gray-200">
+                <a href="index.php" class="text-xl font-bold text-gray-700">CLARTÉ</a>
                 <button @click="open = false" class="text-gray-700 hover:text-gray-900 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
