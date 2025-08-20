@@ -110,11 +110,7 @@
               </h3>
               <span class="border-t border-white"></span>
               <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
-                Digital Marketing
-              </h3>
-              <span class="border-t border-white"></span>
-              <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
-                Content Production
+                Social Media Management
               </h3>
               <span class="border-t border-white"></span>
 
