@@ -89,17 +89,9 @@
 <section class="bg-black">
   <div class="container mx-auto px-6 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
-            <!-- Kolom kiri: judul + tagline -->
-            <div class="flex flex-col justify-start lg:mt-16">
-                <h2 class="text-xl md:text-2xl font-bold leading-tight text-white mb-4">
-                    Our Services
-                </h2>
-                <p class="text-7xl md:text-8xl text-gray-400">
-                  Creativity That Moves Brands Forward.
-                </p>
-            </div>
 
-            <!-- Kolom kanan: deskripsi & button -->
+        
+            <!-- Kolom kiri: deskripsi & button -->
             <div class="flex flex-col space-y-6 lg:mt-[100px]">
               <h3 class="text-white text-4xl md:text-5xl font-bold  text-start ml-4">
                 Brand & Identity
@@ -122,9 +114,43 @@
                 Event & Activation
               </h3>
             </div>
+
+            <!-- Kolom kanan: judul + tagline -->
+            <div class="flex flex-col justify-start lg:mt-16">
+                <h2 class="text-xl md:text-2xl font-bold leading-tight text-white mb-4">
+                    Our Services
+                </h2>
+                <p class="text-7xl md:text-8xl text-gray-400">
+                  Creativity That Moves Brands Forward.
+                </p>
+            </div>
         </div>
     </div>
 </section>
+
+    <!-- COUNTER -->
+    <section id="counter" class="section-padding pt-5 bg-white">
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                        <h1 class="text-black display-4">1k+</h1>
+                        <h6 class="text-uppercase mb-0 text-black mt-3">Total Download</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                        <h1 class="text-black display-4">2K+</h1>
+                        <h6 class="text-uppercase mb-0 text-black mt-3">Klien Terpercaya</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                        <h1 class="text-black display-4">500+</h1>
+                        <h6 class="text-uppercase mb-0 text-black mt-3">Tema Dirancang</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                        <h1 class="text-black display-4">100+</h1>
+                        <h6 class="text-uppercase mb-0 text-black mt-3">Member Tim</h6>
+                    </div>
+                </div>
+            </div>
+      </section>
 
 <!-- Contact Us -->
  <section class="bg-white py-10 md:py-16">

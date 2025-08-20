@@ -1,17 +1,8 @@
 <body class="bg-black text-white font-sans">     
     <div class="container mx-auto px-6 py-20">        
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">            
-            <!-- Kolom Kiri: Judul dan tagline -->
-            <div class="flex flex-col justify-start lg:mt-16">
-                <h2 class="text-xl md:text-2xl font-bold leading-tight text-white mb-4">
-                    Vision & Mission 
-                </h2>
-                <p class="text-7xl md:text-8xl text-gray-400">
-                    Where Purpose Meets Presence. 
-                </p>
-            </div>
-
-            <!-- Kolom Kanan: Card Vision & Mission -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24"> 
+            
+        <!-- Kolom kiri: Card Vision & Mission -->
             <div class="flex flex-col space-y-12">
                 
                 <!-- Card Vision -->
@@ -60,6 +51,16 @@
                     </div>
                 </div>
             </div> 
+
+            <!-- Kolom kanan: Judul dan tagline -->
+            <div class="flex flex-col justify-start lg:mt-16">
+                <h2 class="text-xl md:text-2xl font-bold leading-tight text-white mb-4">
+                    Vision & Mission 
+                </h2>
+                <p class="text-7xl md:text-8xl text-gray-400">
+                    Where Purpose Meets Presence. 
+                </p>
+            </div>
         </div> 
     </div> 
 </body>

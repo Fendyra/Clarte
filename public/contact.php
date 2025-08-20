@@ -16,7 +16,7 @@
 
             <!-- Kolom Kanan: Informasi Contact -->
              <div clas>
-                <p class="text-gray-600 text-lg mb-6 lg:mt-[100px]">
+                <p class="text-gray-600 text-lg mb-6 lg:mt-[100px] text-justify">
                     We are here to help you with your creative needs. Whether you have a question, want to discuss a project, or just want to say hello, feel free to reach out!
                 </p>
 
