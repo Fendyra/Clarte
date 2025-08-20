@@ -1,0 +1,79 @@
+<section class="bg-black text-white font-sans py-20 px-6">
+  <div class="container mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center uppercase mb-16 tracking-wide text-gray-400">
+      Our Esteemed Clients
+    </h2>
+
+    <div class="border-t border-b border-gray-700 py-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/glint.jpg" alt="Glint Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Glint
+          </span>
+        </div>
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/procyon.jpg" alt="procyon Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Procyon
+          </span>
+        </div>
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/zenith.jpg" alt="zenith Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Zenith
+          </span>
+        </div>
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/speedy.jpg" alt="Speedy Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Speedy
+          </span>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <div class="border-t border-b border-gray-700 py-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/aether.jpg" alt="Aether. Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Aether.
+          </span>
+        </div>
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/lighthouse.jpg" alt="Lighthouse Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Lighthouse
+          </span>
+        </div>
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/quantum.jpg" alt="Quantum Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Quantum
+          </span>
+        </div>
+
+        <div class="group px-8 flex flex-col items-center justify-center transition-all duration-300">
+          <img src="images/innovate.jpg" alt="Innovate Tech Logo" class="h-16 mb-4 filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 group-hover:text-white transition-colors duration-300">
+            Innovate Tech
+          </span>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>

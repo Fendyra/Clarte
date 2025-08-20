@@ -167,10 +167,16 @@
       </div>
   </section>
 
+<!-- Clients Page -->
+ <section>
+  <?php include "clients.php"; ?>
+</section>
+
 <!-- Contact Us -->
  <section class="bg-white py-10 md:py-16">
   <?php include "contact.php"; ?>
 </section>
+
 
 <!-- Footer -->
 <footer class="bg-black text-white font-sans py-10 md:py-16">
