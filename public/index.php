@@ -113,6 +113,7 @@
               <h3 class="text-white text-4xl md:text-5xl font-bold mb-4 text-start ml-4">
                 Event & Activation
               </h3>
+              <span class="border-t border-white"></span>
             </div>
 
             <!-- Kolom kanan: judul + tagline -->
@@ -128,29 +129,43 @@
     </div>
 </section>
 
-    <!-- COUNTER -->
-    <section id="counter" class="section-padding pt-5 bg-white">
-            <div class="container text-center">
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-                        <h1 class="text-black display-4">1k+</h1>
-                        <h6 class="text-uppercase mb-0 text-black mt-3">Total Download</h6>
-                    </div>
-                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                        <h1 class="text-black display-4">2K+</h1>
-                        <h6 class="text-uppercase mb-0 text-black mt-3">Klien Terpercaya</h6>
-                    </div>
-                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                        <h1 class="text-black display-4">500+</h1>
-                        <h6 class="text-uppercase mb-0 text-black mt-3">Tema Dirancang</h6>
-                    </div>
-                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                        <h1 class="text-black display-4">100+</h1>
-                        <h6 class="text-uppercase mb-0 text-black mt-3">Member Tim</h6>
-                    </div>
-                </div>
-            </div>
-      </section>
+  <!-- Counter Section -->
+  <section id="counter" class="py-20 text-white relative">
+      <div class="absolute inset-0 z-0">
+          <img src="images/Lost-Cause.jpg" alt="Background Image" class="w-full h-full object-cover">
+          <div class="absolute inset-0"></div>
+      </div>
+      
+      <div class="container mx-auto px-4 z-10 relative">
+          <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4 text-black">Our Company in Numbers</h2>
+              <p class="text-lg md:text-xl text-black">
+                We are a dynamic and results-driven company, committed to excellence and delivering outstanding value to our clients. Our journey is defined by milestones that reflect our dedication, expertise, and unwavering focus on success.              </p>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="flex flex-col items-center p-6 bg-white bg-opacity-10" data-aos="fade-down" data-aos-delay="150">
+                  <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700">10+ Years</h1>
+                  <h6 class="text-xl font-medium mt-3 uppercase text-black text-center">Experience in the Industry</h6>
+              </div>
+              
+              <div class="flex flex-col items-center p-6 bg-white bg-opacity-10" data-aos="fade-down" data-aos-delay="250">
+                  <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700">500+</h1>
+                  <h6 class="text-xl font-medium mt-3 uppercase text-black text-center">Successful Projects Delivered</h6>
+              </div>
+              
+              <div class="flex flex-col items-center p-6 bg-white bg-opacity-10" data-aos="fade-down" data-aos-delay="350">
+                  <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700">98%</h1>
+                  <h6 class="text-xl font-medium mt-3 uppercase text-black text-center">Client Satisfaction Rate</h6>
+              </div>
+              
+              <div class="flex flex-col items-center p-6 bg-white bg-opacity-10" data-aos="fade-down" data-aos-delay="450">
+                  <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700">75+</h1>
+                  <h6 class="text-xl font-medium mt-3 uppercase text-black text-center">Dedicated Professionals on Our Team</h6>
+              </div>
+          </div>
+      </div>
+  </section>
 
 <!-- Contact Us -->
  <section class="bg-white py-10 md:py-16">
