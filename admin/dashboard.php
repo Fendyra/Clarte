@@ -43,17 +43,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $stmt->bind_param("sss", $title, $file_path, $category);
                     
                     if ($stmt->execute()) {
-                        $message = "Foto berhasil ditambahkan!";
+                        $message = "Photo added successfully!";
                     } else {
-                        $error = "Gagal menambahkan foto: " . $stmt->error;
+                        $error = "Failed to add photo: " . $stmt->error;
                     }
                     $stmt->close();
                 } else {
-                    $error = "Maaf, terjadi kesalahan saat mengunggah file Anda.";
+                    $error = "Sorry, an error occurred while uploading your file.";
                 }
             }
         } else {
-            $error = "File tidak diunggah atau terjadi kesalahan.";
+            $error = "File not uploaded or an error occurred.";
         }
     } elseif (isset($_POST['delete_photo'])) {
         $id = $_POST['id'];
@@ -75,9 +75,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (file_exists($file_path_to_delete)) {
                 unlink($file_path_to_delete);
             }
-            $message = "Foto berhasil dihapus!";
+            $message = "Photo successfully deleted!";
         } else {
-            $error = "Gagal menghapus foto: " . $stmt_delete->error;
+            $error = "Failed to delete photo: " . $stmt_delete->error;
         }
         $stmt_delete->close();
     }
@@ -117,41 +117,43 @@ $conn->close();
 
         <!-- Form untuk Tambah Foto Baru -->
         <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
-            <h2 class="text-2xl font-bold text-gray-700 mb-4">Tambah Foto Baru</h2>
+            <h2 class="text-2xl font-bold text-gray-700 mb-4">Add New Image</h2>
             <form action="dashboard.php" method="POST" enctype="multipart/form-data" class="space-y-4">
                 <input type="hidden" name="add_photo" value="1">
                 <div>
-                    <label for="title" class="block text-sm font-medium text-gray-700">Judul Foto</label>
+                    <label for="title" class="block text-sm font-medium text-gray-700">Image Tittle</label>
                     <input type="text" id="title" name="title" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
                 </div>
                 <div>
-                    <label for="category" class="block text-sm font-medium text-gray-700">Kategori</label>
+                    <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
                     <select id="category" name="category" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
-                        <option value="Workshop">Workshop</option>
+                        <option value="Workshop">Creative Workshop</option>
                         <option value="Production">Production</option>
-                        <option value="Studio">Studio</option>
+                        <option value="Campaign & Collaboration">Campaign & Collaboration</option>
                         <option value="Events">Events</option>
+                        <option value="Brand & Activation">Brand & Activation</option>
+
                     </select>
                 </div>
                 <div>
-                    <label for="file_upload" class="block text-sm font-medium text-gray-700">Pilih Gambar</label>
+                    <label for="file_upload" class="block text-sm font-medium text-gray-700"></label>
                     <input type="file" id="file_upload" name="file_upload" required class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100">
                 </div>
-                <button type="submit" class="w-full py-2 px-4 bg-black text-white rounded-md hover:bg-gray-800">Tambah Foto</button>
+                <button type="submit" class="w-full py-2 px-4 bg-black text-white rounded-md hover:bg-gray-800">Add Image</button>
             </form>
         </div>
 
         <!-- Tabel untuk Mengelola Galeri -->
         <div class="bg-white p-6 rounded-xl shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-700 mb-4">Kelola Galeri</h2>
+            <h2 class="text-2xl font-bold text-gray-700 mb-4">Manage Gallery</h2>
             <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
                     <tr>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Judul</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kategori</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Gambar</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Aksi</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tittle</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Category</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Image</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Action</th>
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
@@ -166,21 +168,21 @@ $conn->close();
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2">
                                     <!-- Formulir Edit -->
-                                    <form action="edit_photo.php" method="GET" class="inline-block">
+                                    <form action="edit.php" method="GET" class="inline-block">
                                         <input type="hidden" name="id" value="<?php echo htmlspecialchars($row['id']); ?>">
                                         <button type="submit" class="text-indigo-600 hover:text-indigo-900">Edit</button>
                                     </form>
                                     <!-- Formulir Hapus -->
                                     <form action="dashboard.php" method="POST" class="inline-block" onsubmit="return confirm('Apakah Anda yakin ingin menghapus foto ini?');">
                                         <input type="hidden" name="id" value="<?php echo htmlspecialchars($row['id']); ?>">
-                                        <button type="submit" name="delete_photo" class="text-red-600 hover:text-red-900">Hapus</button>
+                                        <button type="submit" name="delete_photo" class="text-red-600 hover:text-red-900">Delete</button>
                                     </form>
                                 </td>
                             </tr>
                         <?php endwhile; ?>
                     <?php else: ?>
                         <tr>
-                            <td colspan="5" class="px-6 py-4 text-center text-sm text-gray-500">Belum ada foto di galeri.</td>
+                            <td colspan="5" class="px-6 py-4 text-center text-sm text-gray-500">There are no photos in the gallery yet.</td>
                         </tr>
                     <?php endif; ?>
                 </tbody>
