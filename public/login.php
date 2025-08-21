@@ -1,3 +1,48 @@
+<?php
+session_start();
+include 'db_conn.php';
+
+$login_errors = [];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    if (empty($email) || empty($password)) {
+        $login_errors[] = "Email and password are required.";
+    } else {
+        // Menggunakan prepared statement untuk menghindari SQL injection
+        $stmt = $conn->prepare("SELECT id, name, password, role FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows === 1) {
+            $user = $result->fetch_assoc();
+            // Verifikasi password yang di-hash
+            if (password_verify($password, $user['password'])) {
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_name'] = $user['name'];
+                $_SESSION['role'] = $user['role']; // Menyimpan role pengguna di sesi
+
+                // Perbaiki jalur pengalihan untuk admin
+                if ($user['role'] === 'admin') {
+                    header("Location: ../admin/dashboard.php");
+                } else {
+                    header("Location: index.php");
+                }
+                exit();
+            } else {
+                $login_errors[] = "Invalid email or password.";
+            }
+        } else {
+            $login_errors[] = "Invalid email or password.";
+        }
+        $stmt->close();
+    }
+}
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,42 +56,6 @@
     </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <?php
-    session_start();
-    include 'db_conn.php';
-
-    $login_errors = [];
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = $_POST['email'] ?? '';
-        $password = $_POST['password'] ?? '';
-
-        if (empty($email) || empty($password)) {
-            $login_errors[] = "Email and password are required.";
-        } else {
-            $stmt = $conn->prepare("SELECT id, name, password FROM users WHERE email = ?");
-            $stmt->bind_param("s", $email);
-            $stmt->execute();
-            $result = $stmt->get_result();
-
-            if ($result->num_rows === 1) {
-                $user = $result->fetch_assoc();
-                if (password_verify($password, $user['password'])) {
-                    $_SESSION['user_id'] = $user['id'];
-                    $_SESSION['user_name'] = $user['name'];
-                    header("Location: index.php"); // Alihkan ke halaman utama atau dashboard
-                    exit();
-                } else {
-                    $login_errors[] = "Invalid email or password.";
-                }
-            } else {
-                $login_errors[] = "Invalid email or password.";
-            }
-            $stmt->close();
-        }
-    }
-    $conn->close();
-    ?>
     <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg">
         <h2 class="text-2xl font-bold text-center text-gray-700">Masuk ke Akun Anda</h2>
         

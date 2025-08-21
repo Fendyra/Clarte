@@ -1,6 +1,6 @@
 <section class="bg-black text-white font-sans py-20 px-6">
   <div class="container mx-auto">
-           <div class="text-left mb-12">
+           <div class="text-right mb-12">
               <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">Our Estemeed <br> Clients</h2>
               <p class="text-lg md:text-xl text-white">
                 Collaboration with brands that value creativity, clarity, and innovation.             </div>
