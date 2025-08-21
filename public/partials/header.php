@@ -66,7 +66,7 @@ if (session_status() == PHP_SESSION_NONE) {
                     </a>
                 <?php endif; ?>
 
-                <!-- Hamburger Button to toggle sidebar -->
+                <!-- Button to toggle sidebar -->
                 <button @click="open = !open" class="text-gray-700 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -101,9 +101,9 @@ if (session_status() == PHP_SESSION_NONE) {
                         </svg>
                     </div>
                     <div x-show="dropdown" x-collapse.duration.500ms class="pl-4 mt-2 space-y-2 text-sm text-gray-600 border-l border-gray-300">
-                        <a href="#" class="block hover:underline">Design</a>
-                        <a href="#" class="block hover:underline">Branding</a>
-                        <a href="#" class="block hover:underline">Inspiration</a>
+                        <a href="branding-article.php" class="block hover:underline">Design</a>
+                        <a href="branding-article.php" class="block hover:underline">Branding</a>
+                        <a href="branding-article.php" class="block hover:underline">Inspiration</a>
                     </div>
                 </div>
 
