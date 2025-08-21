@@ -75,7 +75,7 @@
     ?>
     
     <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg">
-        <h2 class="text-2xl font-bold text-center text-gray-700">Buat Akun Baru</h2>
+        <h2 class="text-2xl font-bold text-center text-gray-700">Create New Account</h2>
 
         <?php if (!empty($errors)): ?>
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
@@ -87,7 +87,7 @@
 
         <form action="register.php" method="POST" class="space-y-4">
             <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                 <input type="text" id="name" name="name" required
                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm">
             </div>
@@ -102,20 +102,20 @@
                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm">
             </div>
             <div>
-                <label for="confirm_password" class="block text-sm font-medium text-gray-700">Konfirmasi Password</label>
+                <label for="confirm_password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
                 <input type="password" id="confirm_password" name="confirm_password" required
                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm">
             </div>
             <div>
                 <button type="submit"
                         class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                    Daftar
+                    Regist
                 </button>
             </div>
         </form>
 
         <div class="text-sm text-center text-gray-500">
-            Sudah punya akun? <a href="login.php" class="font-medium text-black hover:underline">Masuk</a>
+            Already have an account? <a href="login.php" class="font-medium text-blue-700 hover:underline">Login</a>
         </div>
     </div>
 </body>

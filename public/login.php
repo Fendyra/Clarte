@@ -57,7 +57,7 @@ $conn->close();
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg">
-        <h2 class="text-2xl font-bold text-center text-gray-700">Masuk ke Akun Anda</h2>
+        <h2 class="text-2xl font-bold text-center text-gray-700">Login to Your Account</h2>
         
         <?php if (isset($_GET['success'])): ?>
             <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
@@ -87,13 +87,13 @@ $conn->close();
             <div>
                 <button type="submit"
                         class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                    Masuk
+                    Sig In
                 </button>
             </div>
         </form>
         
         <div class="text-sm text-center text-gray-500">
-            Belum punya akun? <a href="register.php" class="font-medium text-black hover:underline">Daftar sekarang</a>
+            Don't have an account yet? <a href="register.php" class="font-medium text-blue-700 hover:underline">Register Now</a>
         </div>
     </div>
 </body>

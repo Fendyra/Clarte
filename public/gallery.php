@@ -22,7 +22,7 @@ $conn->close();
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-white">
     <header class="bg-white">
         <?php include "partials/header.php"; ?> 
     </header>
